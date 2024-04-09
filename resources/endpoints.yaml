@@ -1,0 +1,9 @@
+base:                               'https://reqres.in/api'
+
+user:
+  list:                             '/users/'
+  login:                            '/login/'
+  register:                         '/register'
+
+
+
