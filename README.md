@@ -21,22 +21,21 @@ This repository contains scripts for testing ReqRes.in APIs using Python. [ReqRe
     ```bash
     pip install -r requirements.txt
     ```
+3. install jest axios:
+
+    ```bash
+    npm install --save-dev jest axios
+    ```
 
 ## Usage
 
-1. navigate to the `src` directory:
-
+1. run the desired script:
+    pytest:
     ```bash
-    cd src
+    pytest -vvvsq
     ```
-
-2. run the desired script:
-
+    axios:
     ```bash
-    python main.py
+    npm test -- --verbose
     ```
-
-## Scripts
-
-- **`main.py`**: This script tests various endpoints of the ReqRes.in API and validates the responses.
 
