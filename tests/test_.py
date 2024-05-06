@@ -12,7 +12,7 @@ def test_singleUser():
     id = []
     for userid in data:
         id.append(userid['id'])
-    
+
     getId = random.choice(id)
     response = request(getData('user', 'list') + str(getId), 'get')
     status(response, 200)
@@ -59,14 +59,14 @@ def test_registerUser():
     params = {'email': 'eve.holt@reqres.in', 'password': 'pistol'}
     loginRegister(params, 'register', 200, 'token', creds=True)
     return params
-    
+
 def test_notRegistered():
     loginRegister(test_registerUser(), 'register', 400, 'error')
-    
+
 def test_userLogin():
     params = {'email': 'eve.holt@reqres.in', 'password': 'cityslicka'}
     loginRegister(params, 'login', 200, 'token', creds=True)
     return params
-    
+
 def test_notUserLogin():
     loginRegister(test_userLogin(), 'login', 400, 'error')
