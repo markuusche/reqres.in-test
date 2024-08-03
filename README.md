@@ -2,7 +2,7 @@
 
 This repository contains scripts for testing ReqRes.in APIs using Python. [ReqRes.in](https://reqres.in/) is a popular API testing service that allows developers to mock APIs for testing purposes.
 
-## dependencies
+## Dependencies
 
 - **Requests**: Python HTTP library for making requests and working with APIs.
 - **PyYAML**: YAML parser and emitter for Python.
@@ -29,13 +29,15 @@ This repository contains scripts for testing ReqRes.in APIs using Python. [ReqRe
 
 ## Usage
 
-1. run the desired script:
-    pytest:
+1. run the script using: <br>
+   pytest:
+   
     ```bash
     pytest -vvvsq
     ```
     axios:
+   
     ```bash
-    npm test -- --verbose
+    npm test --verbose
     ```
 
